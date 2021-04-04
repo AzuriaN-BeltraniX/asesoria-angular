@@ -18,5 +18,3 @@ La aplicación tiene como función mostrar el uso de módulos, componentes y man
     > [**_NautilusApi_**](https://nautilus-azbel.herokuapp.com/api) by AzuriaN BeltraniX 2020 - 2021
 
 + Conexión a la página: [**_JSONPlaceholder_**](https://jsonplaceholder.typicode.com/), para recibir un listado de usuarios ficticios alojados en la misma.
-
----
