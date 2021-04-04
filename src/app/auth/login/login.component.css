@@ -5,6 +5,24 @@
     text-align: center;
 }
 
+.message {
+    align-self: center;
+    background-color: rgba(94, 255, 0, 0.25);
+    border-radius: 5px;
+    border: 2px solid rgb(94, 255, 0);
+    margin: 0px 50px;
+}
+
+.btn {
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+
+    cursor: pointer;
+    color: mediumblue;
+}
+
 footer {
     display: flexbox;
     align-items: center;
@@ -14,7 +32,7 @@ footer {
     bottom: 0px;
     width: 100%;
 
-    margin: 10px 0px !important;
+    margin: 30px 0px !important;
     padding: 20px 0px;
     background-color: rgba(44, 241, 255, 0.5);
 }

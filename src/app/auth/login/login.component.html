@@ -1,6 +1,11 @@
 <h1 style="padding-top: 25px; padding-bottom: 20px; text-align: center;">¡Inicia sesión con NautilusApi!</h1>
 
-<div class="container">
+<div class="container message" *ngIf="loginSuccess === true">
+<!-- <div class="container message"> -->
+    <p>Iniciando sesión...</p>
+</div>
+
+<div class="container" *ngIf="loginSuccess === false">
     <form [formGroup]="loginForm" (ngSubmit)="login_NautilusApi()">
         <p>Correo: </p> <input type="text" formControlName="email">
         <p>Contraseña: </p> <input type="password" formControlName="password">
@@ -10,9 +15,16 @@
     </form>
 </div>
 
-<div class="container" *ngIf="loginSuccess === true">
-    <p>Iniciando sesión...</p>
+<div class="container btn" *ngIf="loginSuccess === false">
+    <p (click)="info()">No tengo un usuario... ¿Qué hago?</p>
 </div>
+
+<div class="container" *ngIf="loginSuccess === false">
+    <p *ngIf="info_Flag === true">
+        Para obtener los datos de inicio de sesión de algún usuario público, envíame un correo electrónico: <b>azbel.apps@gmail.com</b>
+    </p>
+</div>
+
 
 <footer>
     ⓘ <b>NautilusApi</b>es un servicio creado por AzuriaN BeltraniX, alojado temporalmente en los servidores de Heroku, siguiendo 

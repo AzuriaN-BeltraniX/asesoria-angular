@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   public baseUrl_NautilusApi: string = environment.url_NautilusApi;
   public year: any = null;
   public loginSuccess: boolean = false;
+  public info_Flag: boolean = false;
 
   // Declarando los datos de inicio de sesión:
   /**
@@ -50,5 +51,9 @@ export class LoginComponent implements OnInit {
       this.router.navigateByUrl('/home');
     });
   };
+
+  info() { 
+    this.info_Flag = true;
+  }
 
 }
