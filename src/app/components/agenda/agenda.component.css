@@ -1,0 +1,24 @@
+.title-container {
+    padding: 5px 10px;
+    text-align: center;
+    border: 2px solid rgb(129, 211, 214);
+    background-color: rgba(129, 211, 214, 0.5);
+}
+
+.content-txtCenter {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: rgba(129, 211, 214, 0.15);
+}
+
+.content-txtRight {
+    padding: 5px 10px;
+    text-align: right;
+    background-color: rgba(129, 211, 214, 0.15);
+}
+
+.content-txtLeft {
+    padding: 5px 10px;
+    text-align: left;
+    background-color: rgba(129, 211, 214, 0.15);
+}

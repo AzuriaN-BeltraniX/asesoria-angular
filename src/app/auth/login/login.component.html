@@ -1,0 +1,20 @@
+<h1 style="padding-top: 25px; padding-bottom: 20px; text-align: center;">¡Inicia sesión con NautilusApi!</h1>
+
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="login_NautilusApi()">
+        <p>Correo: </p> <input type="text" formControlName="email">
+        <p>Contraseña: </p> <input type="password" formControlName="password">
+
+        <br><br>
+        <input type="submit" value="Inicia sesión">
+    </form>
+</div>
+
+<div class="container" *ngIf="loginSuccess === true">
+    <p>Iniciando sesión...</p>
+</div>
+
+<footer>
+    ⓘ <b>NautilusApi</b>es un servicio creado por AzuriaN BeltraniX, alojado temporalmente en los servidores de Heroku, siguiendo 
+    <a href="{{baseUrl_NautilusApi}}">este link.</a> | <b>AzuriaN BeltraniX - {{year}}</b>
+</footer>

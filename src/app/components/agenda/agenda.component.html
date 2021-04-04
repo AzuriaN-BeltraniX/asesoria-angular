@@ -1,0 +1,27 @@
+<div *ngIf="existsToken === false">
+    <p><a href="/login">Inicia sesión</a> para ver los usuarios registrados.</p>
+</div>
+
+<div *ngIf="existsUsers === false && existsToken === true">
+    Cargando usuarios...
+</div>
+
+<div *ngIf="existsToken === true && existsUsers === true">
+    <table>
+        <tr>
+            <td class="title-container">ID</td>
+            <td class="title-container">Usuarios</td>
+            <td class="title-container">Nickname</td>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td class="content-txtRight">{{user.id}}</td>
+            <td class="content-txtCenter">{{user.name}}</td>
+            <td class="content-txtCenter">@{{user.username}}</td>
+        </tr>
+    </table>
+    
+    <br>
+    <form style="display: flex; justify-content: center;" (ngSubmit)="logout()">
+        <input type="submit" value="Cierra Sesión">
+    </form>
+</div>

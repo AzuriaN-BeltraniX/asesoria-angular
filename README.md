@@ -1,27 +1,22 @@
-# AsesoriaAngular
+# **Asesoría de Angular**
+**_Proyecto en donde se aplican conceptos básicos de Angular._**
+> _Desarrollado con: AngularCLI v11.2.7 - Node v14.16.0_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+----
 
-## Development server
+* ## Instalacion:
+    _Ejecutar desde carpeta raiz_
+```
+    npm install
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Descripción:
+La aplicación tiene como función mostrar el uso de módulos, componentes y manejo de rutas, así como también la consulta de APIs como:
++ **_NautilusApi_**, alojado temporalmente en Heroku, para la obtención de un token después de iniciar sesión con un usuario existente en la base de datos de Nautilus.
+    > [**_NautilusApi_**](https://nautilus-azbel.herokuapp.com/api) by AzuriaN BeltraniX 2020 - 2021
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
++ Conexión a la página: [**_JSONPlaceholder_**](https://jsonplaceholder.typicode.com/), para recibir un listado de usuarios ficticios alojados en la misma.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
